@@ -1,0 +1,21 @@
+.ticker-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.ticker-box .text {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+.ticker-box .square {
+  width: 13px;
+  height: 13px;
+  vertical-align: top;
+  display: inline-block;
+  border: 1px solid #444;
+  float: right;
+  margin-top: 2px;
+}
