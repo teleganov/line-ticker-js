@@ -6,7 +6,7 @@ A simple line-by-line color-coded ticker plugin (requires jQuery)
 Installation
 ------------
 Installation is easy. Just include line-ticker.js and line-ticker.css in your html file
-```sh
+```html
 <script src="line-ticker.js"></script>
 <script src="line-ticker.css"></script>
 ```
@@ -14,7 +14,7 @@ Installation is easy. Just include line-ticker.js and line-ticker.css in your ht
 Usage
 -----
 To create a line-ticker, you need the following parameters:
-```sh
+```javascript
 var params = {
     element: $('.tickerContainer'),
     data: [
@@ -33,11 +33,11 @@ var params = {
 - optional - **showDuration:** (default: 4000) Amount of time a single item is displayed (in milliseconds)
 
 To render the ticker, simply pass in the parameters you created to LineTicker.render()
-```sh
+```javascript
 var myTicker = LineTicker.render(params);
 ```
 If you need to modify the data in the ticker, just reference the var you created for it (or find the entry by an item keyword - i.e. 'msg1')
-```sh
+```javascript
 myTicker.data[0].text = "This is a new message";
 ```
 
