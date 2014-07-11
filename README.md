@@ -3,6 +3,8 @@ line-ticker.js
 
 A simple line-by-line color-coded ticker plugin (requires jQuery)
 
+[Demo here](http://htmlpreview.github.io/?https://raw.githubusercontent.com/teleganov/line-ticker-js/master/demos/demo.html)
+
 Installation
 ------------
 Installation is easy. Just include line-ticker.js and line-ticker.css in your html file
