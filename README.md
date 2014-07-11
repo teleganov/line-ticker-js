@@ -29,9 +29,9 @@ var params = {
     padding: '5px 9px 0px 9px'
 };
 ```
-- *required* - **element:** A jQuery element in which the ticker will be rendered. The ticker will use 100% of the width and height of this element
+- *required* - **element:** A jQuery element in which the ticker will be rendered. The ticker will fit to the size of this element
 - *required* - **data:** An array of {keyword, text, color} objects.
-- optional - **transition:** (default: 'fade') The type of transition between items ('slide' or 'fade')
+- optional - **transition:** (default: 'fade') The type of transition between items ('fade', 'slideUp', 'slideDown)
 - optional - **transitionLength:** (default: 500) Length of the transition (in milliseconds)
 - optional - **showDuration:** (default: 4000) Amount of time a single item is displayed (in milliseconds)
 - optional - **padding:** (default: '0 0 0 0') CSS padding for ticker items (top, right, bottom, left)

@@ -35,11 +35,13 @@ var LineTicker = {
         ticker.current = data[counter].keyword;
         if(params.transition === 'fade')
           elem.find('.ticker-box').fadeIn(params.transitionLength);
-        if(params.transition === 'slide')
+        if(params.transition === 'slideDown')
           elem.find('.ticker-box').slideDown(params.transitionLength);
+        if(params.transition === 'slideUp')
+          elem.find('.ticker-box').slideUp(params.transitionLength);
         counter++;
       });
-      if(counter === data.length){
+      if(counter >= data.length){
         counter = 0;
       }
       setTimeout(tickerTimer, params.showDuration);

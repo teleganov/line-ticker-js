@@ -9,7 +9,7 @@ $(document).ready(function(){
 		transition: 'fade',
 		transitionLength: 500,
 		showDuration: 4000,
-		padding: '5px 9px 0px 9px'
+		padding: '7px 9px 0px 9px'
 	};
 	var myTicker = LineTicker.render(params);
 });
