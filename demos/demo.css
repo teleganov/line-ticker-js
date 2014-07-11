@@ -2,11 +2,12 @@
   width: 100%;
   background-color: #EFEFEF;
   border-bottom: 1px solid #E0E0E0;
-  font-size: 24px;
+  font-size: 36px;
+  color: #6A68B0;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 20px;
-  text-shadow: 1px 0 0 white;
+  text-shadow: 0 1px 0 white;
 }
 
 .tickerContainer {
@@ -32,8 +33,8 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 12px;
-  text-shadow: 1px 0 0 white;
+  margin: 14px;
+  text-shadow: 0 1px 0 white;
   font-weight: 200;
 }
 
