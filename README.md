@@ -32,7 +32,7 @@ var params = {
 - optional - **transition:** (default: 'fade') The type of transition between items ('slide' or 'fade')
 - optional - **transitionLength:** (default: 500) Length of the transition (in milliseconds)
 - optional - **showDuration:** (default: 4000) Amount of time a single item is displayed (in milliseconds)
-- optional - **padding:** (default: 0 0 0 0) CSS padding for ticker items (top, right, bottom, left)
+- optional - **padding:** (default: '0 0 0 0') CSS padding for ticker items (top, right, bottom, left)
 
 To render the ticker, simply pass in the parameters you created to LineTicker.render()
 ```javascript
