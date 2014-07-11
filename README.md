@@ -8,7 +8,7 @@ Installation
 Installation is easy. Just include line-ticker.js and line-ticker.css in your html file
 ```html
 <script src="line-ticker.js"></script>
-<script src="line-ticker.css"></script>
+<link href="line-ticker.css" rel="stylesheet" type="text/css">
 ```
 
 Usage
@@ -23,7 +23,8 @@ var params = {
     ],
     transition: 'fade',
     transitionLength: 500,
-    showDuration: 4000
+    showDuration: 4000,
+    padding: '5px 9px 0px 9px'
 };
 ```
 - *required* - **element:** A jQuery element in which the ticker will be rendered. The ticker will use 100% of the width and height of this element
@@ -31,6 +32,7 @@ var params = {
 - optional - **transition:** (default: 'fade') The type of transition between items ('slide' or 'fade')
 - optional - **transitionLength:** (default: 500) Length of the transition (in milliseconds)
 - optional - **showDuration:** (default: 4000) Amount of time a single item is displayed (in milliseconds)
+- optional - **padding:** (default: 0 0 0 0) CSS padding for ticker items (top, right, bottom, left)
 
 To render the ticker, simply pass in the parameters you created to LineTicker.render()
 ```javascript

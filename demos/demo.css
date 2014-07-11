@@ -1,0 +1,10 @@
+.tickerContainer {
+	width: 360px;
+  height: 29px;
+  margin-top: 10px;
+  text-shadow: 0 -1px 0 #3A3A3A;
+  background-color: #4E4E4E;
+  font-size: 13px;
+  border: 1px solid #8E8E8E;
+  color: #EDEDED;
+}
