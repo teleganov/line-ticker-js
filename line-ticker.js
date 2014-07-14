@@ -34,9 +34,8 @@ var LineTicker = {
 
     var dropdown = elem.find('.ticker-dropdown').append('<ul style="margin:0;padding:0;">').hide();
     var padtop = elem.find('.ticker-box').css('padding-top').slice(0,-2);
-    var itemHeight = elem.height() - padtop;
     for(var i = 0; i < data.length; i++){
-      var cssp = {height:itemHeight+'px',padding:elem.find('.ticker-box').css('padding')};
+      var cssp = {height:elem.height()+'px',padding:elem.find('.ticker-box').css('padding')};
       var item = $(document.createElement('li')).attr('id', data[i].keyword).addClass('ticker-dropdown-item').css(cssp);
       var liElement = dropdown.find('ul').append(item).find('#'+data[i].keyword);
       liElement.append('<div class="ticker-text"></div><div class="ticker-shape"></div>')
