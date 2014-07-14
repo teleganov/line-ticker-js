@@ -8,12 +8,11 @@ $(document).ready(function(){
 			{keyword: 'msg3', text: 'This is the third message', color: "#EC6F5A"}
 		],
 		transition: 'fade',
-		transitionLength: 500,
-		showDuration: 4000,
-		padding: '7px 9px 0px 9px',
-    shapeRadius: '0px',
-    shapeSize: '13px',
-    shapeBorder: '#888'
+		transitionLength: 300,
+		showDuration: 1000,
+		itemCSS: {padding:'7px 9px 0px 9px'},
+    shapeCSS: {borderRadius:'10px',width:'13px',height:'13px',border:'1px solid #EFEFEF'},
+    hover: true
 	};
 	myTicker = LineTicker.render(params);
 });

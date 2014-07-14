@@ -1,13 +1,14 @@
 .navbar {
   width: 100%;
   background-color: #EFEFEF;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #2e89cd;
   font-size: 36px;
-  color: #6A68B0;
+  color: #2e89cd;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 20px;
-  text-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 #FFF;
+  font-weight: 500;
 }
 
 .tickerContainer {
@@ -20,6 +21,7 @@
   border-radius: 2px;
   color: #000;
   margin: 0 auto;
+  position: relative;
 }
 
 body {

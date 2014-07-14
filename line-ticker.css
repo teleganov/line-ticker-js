@@ -1,18 +1,51 @@
 .ticker-box {
   overflow: hidden;
   display: none;
+  padding: 0;
 }
 
-.ticker-box .text {
+.ticker-text {
   display: inline-block;
   vertical-align: top;
   float: left;
 }
-.ticker-box .square {
+.ticker-text > a {
+  color: #2e89cd;
+}
+.ticker-shape {
   width: 13px;
   height: 13px;
   vertical-align: top;
   display: inline-block;
   border: 1px solid #444;
+  border-radius: 0px;
   float: right;
+}
+.ticker-dropdown {
+  position: absolute;
+  width: inherit;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  background-color: #FFF;
+  left: -1px;
+  border: 1px solid #000;
+  border-top: none;
+}
+.ticker-dropdown-item {
+  list-style: none;
+  text-align: left;
+  vertical-align: middle;
+  background-color: white;
+  color: black;
+}
+.ticker-dropdown-item > a {
+  color: #2e89cd;
+}
+.ticker-dropdown-item-active {
+  background-color: #2e89cd;
+  color: white;
+}
+.ticker-dropdown-item-active > .ticker-text > a {
+  color: white;
 }
