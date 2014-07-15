@@ -36,15 +36,26 @@ var params = {
 - optional - **transitionLength:** (default: 500) Length of the transition (in milliseconds)
 - optional - **showDuration:** (default: 4000) Amount of time a single item is displayed (in milliseconds)
 - optional - **shapeCSS:** (default: {}) Camel-case CSS options for the shape
-- optional - **itemCSS:** (default: {}) Camel-case CSS options for the ticker item
+- optional - **itemCSS:** (default: {}) Camel-case CSS options for the main ticker item
 
-To render the ticker, simply pass in the parameters you created to LineTicker.render()
+To render the ticker, simply pass in the parameters you created to LineTicker.new()
 ```javascript
-var myTicker = LineTicker.render(params);
+var myTicker = LineTicker.new(params);
 ```
-If you need to modify the data in the ticker, just reference the var you created for it:
+If you need to modify the data in the ticker, call LineTicker.updateItem:
 ```javascript
-myTicker.data[0].text = "This is a new message";
+// LineTicker.updateItem(tickerVar, keyword, {params});
+LineTicker.updateItem(myTicker, "msg1", {text:"This is the new text for message 1", color:"#f0f0f0"});
+```
+To add new items to the ticker, call LineTicker.addItem:
+```javascript
+// LineTicker.addItem(tickerVar, {params});
+LineTicker.addItem(myTicker, {keyword:"msg4", text:"This is a new message, msg4", color:"#f0f0f0"});
+```
+To remove items from the ticker, call LineTicker.removeItem:
+```javascript
+// LineTicker.removeItem(tickerVar, keyword);
+LineTicker.removeItem(myTicker, "msg1");
 ```
 
 Data
@@ -53,6 +64,10 @@ A data object must consist of (at least) a keyword, text, and a color: `{keyword
   
 **Additional parameters:**
 - Adding a 'link' parameter (i.e. `link: 'newpage.html'`) will turn the element into a hyperlink to the indicated page
+
+Customization
+-------------
+To further customize the styling of the ticker, you can modify line-ticker.css directly
 
 Version
 ----

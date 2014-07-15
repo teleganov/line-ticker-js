@@ -14,5 +14,5 @@ $(document).ready(function(){
     shapeCSS: {borderRadius:'10px',width:'13px',height:'13px',border:'1px solid #EFEFEF'},
     hover: true
 	};
-	myTicker = LineTicker.render(params);
+	myTicker = LineTicker.new(params);
 });

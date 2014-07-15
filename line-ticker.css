@@ -51,7 +51,7 @@
 }
 
 .ticker-dropdown-item .ticker-shape {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .ticker-dropdown-item-active .ticker-shape {
   opacity: 1.0;
