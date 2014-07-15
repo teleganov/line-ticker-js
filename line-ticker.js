@@ -115,7 +115,6 @@ var LineTicker = {
       counter = index;
     box.show();
     (function tickerTimer() {
-      console.log('tickerTimer runs');
       if(counter >= ticker.params.data.length){
         counter = 0;
       }
